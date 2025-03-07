@@ -1,0 +1,28 @@
+{
+  "name": "module-product",
+  "version": "1.0.0",
+  "description": "Util para trabajar con productos en aplicaciones de manejo de inventarios.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "format": ["esm", "cjs"],
+    "dts": true,
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "private": true,
+  "scripts": {
+    "build": "tsup"
+  },
+  "author": "Alejandro Jorgen Marten",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  }
+}
